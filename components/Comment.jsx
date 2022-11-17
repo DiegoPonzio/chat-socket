@@ -1,6 +1,6 @@
 import { AiOutlineUser } from 'react-icons/ai'
 
-const Comment = ({user, text}) => {
+export default function Comment ({user, text}) {
     return (
         <article className="p-6 mb-6 text-base bg-white rounded-lg dark:bg-gray-900">
             <footer className="flex justify-between items-center mb-2">
@@ -20,4 +20,3 @@ const Comment = ({user, text}) => {
     )
 }
 
-export default Comment

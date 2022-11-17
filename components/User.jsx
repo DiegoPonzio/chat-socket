@@ -2,7 +2,8 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import Router from "next/router";
 
-const User = () => {
+
+export default function User () {
 
     const { register, formState: { errors }, watch, handleSubmit } = useForm();
 
@@ -66,5 +67,3 @@ const User = () => {
         </div>
     )
 }
-
-export default User

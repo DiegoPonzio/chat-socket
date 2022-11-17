@@ -6,7 +6,7 @@ import Comment from "./Comment"
 
 let socket = io()
 
-const Chat = ({ user }) => {
+export default function Chat ({ user }) {
 
     const { register, formState: { errors }, watch, handleSubmit } = useForm();
     const [chat, setChat] = useState([])
@@ -70,4 +70,3 @@ const Chat = ({ user }) => {
     )
 }
 
-export default Chat

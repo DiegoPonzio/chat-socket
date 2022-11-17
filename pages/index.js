@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
-import {Chat} from "../components/chat";
-import {Layout} from "../components/Layout";
+import Chat from "../components/chat";
+import Layout from "../components/Layout";
 import withSession from "../lib/session";
 
 export default function Home({ user }) {
