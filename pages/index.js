@@ -1,8 +1,6 @@
 import { useState } from "react";
 import Chat from "../components/chat";
 import Layout from "../components/Layout";
-import Prueba from "../components/prueba";
-import User from "../components/User";
 import withSession from "../lib/session";
 
 export default function Home({ user }) {
