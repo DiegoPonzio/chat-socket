@@ -1,7 +1,4 @@
-const { config } = require("dotenv");
-
-config()
-
+const { PORT } = require('./config');
 const app = require('express')()
 const server = require('http').Server(app)
 const io = require('socket.io')(server, {
@@ -52,10 +49,10 @@ nextApp.prepare().then(() => {
         return nextHandler(req, res)
     })
 
-    server.listen(process.env.PORT || 3000, (err) => {
+    server.listen(PORT, (err) => {
         if (err) {
             process.exit(0)
         }
-        console.log('> Ready on http://localhost:3000')
+        console.log(`> Ready on http://localhost:${PORT}`)
     })
 })
