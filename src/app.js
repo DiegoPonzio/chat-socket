@@ -49,6 +49,10 @@ nextApp.prepare().then(() => {
         return nextHandler(req, res)
     })
 
+    app.get('/components', (req,res) => {
+        return nextHandler(req,res)
+    })
+
     server.listen(PORT, (err) => {
         if (err) {
             process.exit(0)
