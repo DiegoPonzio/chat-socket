@@ -2,7 +2,7 @@ import { data } from "autoprefixer";
 import { useEffect, useState } from "react"
 import { useForm } from "react-hook-form";
 import io from "socket.io-client";
-import Comment from "./Comment"
+import Comment from "components/Comment"
 
 let socket = io()
 
